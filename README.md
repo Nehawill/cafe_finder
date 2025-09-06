@@ -16,9 +16,7 @@ This project is a web application designed to help you find and save cafes near 
 - **Libraries:** Hammer.js for swipe gestures
 - **Backend (Local Proxy):** Node.js, Express.js
 
-## 🚀 How to Run the Project
 
-To get this project up and running on your local machine, follow these steps.
 
 ### Step 1: Clone the Repository
 
