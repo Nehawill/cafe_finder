@@ -18,10 +18,3 @@ This project is a web application designed to help you find and save cafes near 
 
 
 
-### Step 1: Clone the Repository
-
-Clone this repository to your local machine using Git.
-
-```bash
-git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
-cd your-repository-name
