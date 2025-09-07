@@ -1,11 +1,10 @@
-// GLOBAL CONSTANTS
-// It is critical that you replace this with your actual, valid API key.
-const apiKey = "AIzaSyAavUq1Ipx8TVbntNn8DM_c2gEAfIkkIzI"; 
-// We are re-enabling the proxy to solve the CORS issue
-const useProxy = true;
-const proxy = "https://cors-anywhere.herokuapp.com/"; // Note the trailing slash '/'
 
-// Main function to check for cached location or get new location
+const apiKey = "API KEY"; 
+
+const useProxy = true;
+const proxy = "https://cors-anywhere.herokuapp.com/";
+
+
 function getLocation() {
     const cache = JSON.parse(localStorage.getItem('cachedLocation') || '{}');
     const now = Date.now();
@@ -25,7 +24,7 @@ function getLocation() {
 // Function to fetch cafe data from the Google Places API
 async function useLocation(lat, lng) {
     const endpoint = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=1500&type=cafe&key=${apiKey}`;
-    // Re-enabling the proxy for cross-origin requests
+   
     const url = useProxy ? proxy + endpoint : endpoint;
 
     try {
